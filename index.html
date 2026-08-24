@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Phone</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="phone">
+
+
+<div class="status-bar">
+<span id="current-time">09:41</span>
+<span>5G ◉</span>
+</div>
+
+
+
+<div id="desktop" class="page active">
+
+<div class="app-grid">
+
+
+<div class="app-icon" onclick="openApp('echo')">
+
+<div class="icon">
+◉
+</div>
+
+<span>Echo</span>
+
+</div>
+
+
+
+<div class="app-icon" onclick="openApp('system')">
+
+<div class="icon">
+⚙
+</div>
+
+<span>System</span>
+
+</div>
+
+
+
+<div class="app-icon" onclick="openApp('core')">
+
+<div class="icon">
+✦
+</div>
+
+<span>Core</span>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="echo" class="page">
+
+<h1>Echo</h1>
+
+<div id="contacts"></div>
+
+
+<div id="chat-area" class="hidden">
+
+
+<div id="chat-title"></div>
+
+
+<div id="chat-box"></div>
+
+
+<div class="chat-input">
+
+<input id="chat-input" placeholder="Message">
+
+
+<button id="send-button">
+↑
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div id="system" class="page">
+
+<h1>System</h1>
+
+
+<div class="card">
+Chat Service
+</div>
+
+
+<div class="card">
+Voice Service
+</div>
+
+
+<div class="card">
+Image Service
+</div>
+
+
+<div class="card">
+MCP Hub
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div id="core" class="page">
+
+
+<h1>Core</h1>
+
+
+<div class="orb">
+✦
+</div>
+
+
+<div class="card">
+Memory
+</div>
+
+
+<div class="card">
+Identity
+</div>
+
+
+<div class="card">
+AI Router
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="js/core/storage.js"></script>
+
+<script src="js/core/apiManager.js"></script>
+
+<script src="js/core/userIdentity.js"></script>
+
+<script src="js/core/aiIdentity.js"></script>
+
+<script src="js/core/identityManager.js"></script>
+
+<script src="js/services/chatService.js"></script>
+
+<script src="js/core/aiRouter.js"></script>
+
+<script src="js/apps/echo.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+
+</html>
