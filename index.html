@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEXUS OS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+ NEXUS OS SYSTEM
+========================= -->
+
+<div id="nexus-os">
+
+
+    <!-- STATUS BAR -->
+
+    <div class="status-bar">
+
+        <div class="status-time">
+            20:35
+        </div>
+
+
+        <div class="status-center">
+            NEXUS OS
+        </div>
+
+
+        <div class="status-icons">
+
+            <span>
+                ◉
+            </span>
+
+            <span>
+                ▮▮▮
+            </span>
+
+            <span>
+                🔋
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- =========================
+        DESKTOP
+    ========================= -->
+
+
+    <section id="desktop"
+    class="screen active">
+
+
+        <div class="nexus-core">
+
+
+            <div class="nexus-logo">
+                NEXUS
+            </div>
+
+
+            <div class="system-status">
+
+                AI CORE ONLINE
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- APP GRID -->
+
+        <div class="app-grid">
+
+
+            <div class="app-icon"
+            onclick="openApp('chat')">
+
+                <div class="icon">
+                    💬
+                </div>
+
+                <span>
+                    Chat
+                </span>
+
+            </div>
+
+
+
+
+            <div class="app-icon"
+            onclick="openApp('assistant')">
+
+                <div class="icon">
+                    ✦
+                </div>
+
+                <span>
+                    Assistant
+                </span>
+
+            </div>
+
+
+
+
+
+            <div class="app-icon"
+            onclick="openApp('memory')">
+
+                <div class="icon">
+                    🧠
+                </div>
+
+                <span>
+                    Memory
+                </span>
+
+            </div>
+
+
+
+
+
+            <div class="app-icon"
+            onclick="openApp('files')">
+
+                <div class="icon">
+                    📁
+                </div>
+
+                <span>
+                    Files
+                </span>
+
+            </div>
+
+
+
+
+
+            <div class="app-icon"
+            onclick="openApp('gallery')">
+
+                <div class="icon">
+                    ◇
+                </div>
+
+                <span>
+                    Gallery
+                </span>
+
+            </div>
+
+
+
+
+
+            <div class="app-icon"
+            onclick="openApp('settings')">
+
+                <div class="icon">
+                    ⚙
+                </div>
+
+                <span>
+                    Settings
+                </span>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+ APP WINDOW SYSTEM
+========================= -->
+
+
+<div id="app-window"
+class="screen">
+
+
+
+<!-- =========================
+ NEXUS CHAT APP
+========================= -->
+
+
+<div id="chat-app"
+class="app-page">
+
+
+
+    <!-- CHAT HEADER -->
+
+    <header class="app-header">
+
+
+        <button onclick="closeApp()">
+            ←
+        </button>
+
+
+        <h1>
+            NEXUS Chat
+        </h1>
+
+
+    </header>
+
+
+
+
+
+
+
+    <!-- CHAT NAV -->
+
+    <nav class="chat-nav">
+
+
+        <button onclick="chatPage('chats')">
+            Chats
+        </button>
+
+
+        <button onclick="chatPage('discover')">
+            Discover
+        </button>
+
+
+        <button onclick="chatPage('characters')">
+            Characters
+        </button>
+
+
+    </nav>
+
+
+
+
+
+
+
+
+
+<!-- =====================
+ CHATS PAGE
+===================== -->
+
+
+<section id="chats-page"
+class="chat-page active">
+
+
+<h2>
+Chats
+</h2>
+
+
+
+<div class="chat-list">
+
+
+
+<div class="chat-item"
+onclick="openConversation('Luna')">
+
+
+<div class="avatar">
+🌙
+</div>
+
+
+<div class="chat-info">
+
+
+<h3>
+Luna
+</h3>
+
+
+<p>
+今天过得怎么样？
+</p>
+
+
+</div>
+
+
+<span>
+20:10
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="chat-item"
+onclick="openConversation('Raven')">
+
+
+<div class="avatar">
+🖤
+</div>
+
+
+<div class="chat-info">
+
+
+<h3>
+Raven
+</h3>
+
+
+<p>
+案件有新的进展。
+</p>
+
+
+</div>
+
+
+<span>
+18:42
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================
+ DISCOVER PAGE
+===================== -->
+
+
+<section id="discover-page"
+class="chat-page">
+
+
+<h2>
+Discover
+</h2>
+
+
+<input
+class="search-box"
+placeholder="Search AI Characters">
+
+
+
+
+
+<div class="character-grid">
+
+
+<div class="character-card">
+
+<div>
+🌌
+</div>
+
+
+<h3>
+Nova
+</h3>
+
+
+<p>
+Future explorer AI
+</p>
+
+
+<span>
+Adventure · Space
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="character-card">
+
+
+<div>
+🦊
+</div>
+
+
+<h3>
+Kai
+</h3>
+
+
+<p>
+Friendly companion
+</p>
+
+
+<span>
+Friend · Casual
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================
+ CHARACTERS PAGE
+===================== -->
+
+
+<section id="characters-page"
+class="chat-page">
+
+
+<h2>
+Characters
+</h2>
+
+
+
+<div class="create-character">
+
++
+Create Character
+
+</div>
+
+
+
+<div class="character-card">
+
+🌙
+
+<h3>
+Luna
+</h3>
+
+<p>
+Your AI companion
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================
+ CONVERSATION PAGE
+===================== -->
+
+
+<section id="conversation-page"
+class="chat-page">
+
+
+<header class="conversation-header">
+
+
+<button onclick="backToChats()">
+←
+</button>
+
+
+<div class="avatar">
+🌙
+</div>
+
+
+<div>
+
+<h3 id="character-name">
+Luna
+</h3>
+
+
+<p>
+● Online
+</p>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<div id="messages"
+class="messages">
+
+
+<div class="message ai">
+你好，我是 Luna。
+今天感觉怎么样？
+</div>
+
+
+<div class="message user">
+今天还不错。
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="chat-input">
+
+
+<button>
+＋
+</button>
+
+
+<input
+id="message-input"
+placeholder="Message...">
+
+
+
+<button onclick="sendMessage()">
+➤
+</button>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- =========================
+ OTHER APPS
+========================= -->
+
+
+<div id="assistant-app"
+class="app-page coming">
+
+
+<h1>
+Assistant
+</h1>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+
+
+
+<div id="memory-app"
+class="app-page coming">
+
+<h1>
+Memory
+</h1>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+
+
+
+
+<div id="files-app"
+class="app-page coming">
+
+<h1>
+Files
+</h1>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+
+
+
+
+<div id="gallery-app"
+class="app-page coming">
+
+<h1>
+Gallery
+</h1>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+
+
+
+<div id="settings-app"
+class="app-page coming">
+
+<h1>
+Settings
+</h1>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
